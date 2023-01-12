@@ -1,0 +1,139 @@
+/* general style */
+html{
+    font-size: 22px;
+}
+
+body {
+    background-color: rgb(5, 5, 5);
+    color: whitesmoke;
+}
+
+p {
+  color: wheat;
+}
+
+a{
+    color: aliceblue;
+}
+
+a:visited {
+    color: aliceblue;
+}
+
+a:hover, a:active {
+    color: gray;
+}
+
+/* pictures */
+.ticketPicture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.pole_picture{
+  float: right;
+  white-space:nowrap;
+  vertical-align: middle;
+  height: 40%;
+  width: 40%;
+}
+
+.drawing{
+  float: left;
+  vertical-align: middle;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(34, 33, 33);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 85px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: rgb(2, 2, 2);
+  color: rgb(238, 235, 235);
+}
+
+
+.main {
+  padding-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.quote{
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 135%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  text-shadow: black;
+}
+
+.footer{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+input[type=text] {
+  background-color: rgb(13, 11, 11);
+  color: whitesmoke;
+}
+
+textarea{
+  background-color: rgb(13, 11, 11);
+  color: whitesmoke;
+}
+
+button{
+  background-color: wheat;
+  width: 10%;
+}
+
+button:hover{
+  background-color: antiquewhite;
+}
+
+details.project{
+  padding: 1em;
+  border: 1px solid #fbf8f8;
+  border-radius: 4px;
+}
+
+details[open].project{
+  background-color: rgb(36, 36, 36);
+}
+
+details summary.project{
+  color:grey;
+}
+
+details[open] summary.project{
+  color: white;
+}
+
+details summary.story{
+  color: grey;
+}
+
+details[open] summary.story{
+  color:rgb(251, 154, 9);
+}
