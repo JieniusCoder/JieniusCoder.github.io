@@ -19,7 +19,7 @@
         <br>
         <br>
         <h1 style="text-align: center; font-size: 400%; color: antiquewhite;">I am Jie</h1>
-        <h4 style="text-align: center; color: antiquewhite;">current computer science student at Lehigh University</h4>
+        <h4 style="text-align: center; color: antiquewhite;">Current computer science student at Lehigh University</h4>
         <hr style="width:40%;">
         <img src="images/ticket.jpeg" alt="ticket machine in parking garage" class="ticketPicture">
         <article id="skills">
@@ -68,9 +68,9 @@
             <!-- add picture of yangji -->
             <p>
                 I was born and raised in
-                <a href="https://en.wikipedia.org/wiki/Guangzhou" style="color:wheat"><i class="story"></i>Guangzhou
+                <a href="https://en.wikipedia.org/wiki/Guangzhou" style="color:wheat"><i class="story"></i>Guangzhou,
                     China</a>, a city with more than 15
-                million people. My family were farmers before the Chinese modernaization
+                million people. My family were farmers before the Chinese modernization
                 in the early 2000s rasing lifestocks.
             </p>
             <details>
@@ -84,12 +84,12 @@
             <summary>High School Days</summary>
             <!-- add picture of Indy and graduation -->
             <p>
-                After one year of highschool in China, I applied and got into an U.S. high school,
-                <a href="https://en.wikipedia.org/wiki/Guangzhou" style="color:wheat"><i class="story"></i>The
-                    Independent School</a>, in Wichita Kansas. Independent is a small private school and my
-                graduatiing class had less than 40 students. I stayed with a country family of 6 in Augusta Kansas,
+                After one year of highschool in China, I applied and got into a U.S. high school,
+                <a href="https://www.theindependentschool.com/" style="color:wheat"><i class="story"></i>The
+                    Independent School</a>, in Wichita, Kansas. Independent is a small private school and my
+                graduating class had less than 40 students. I stayed with a large family of 6 in Augusta, Kansas,
                 where
-                they have a farm and too many dogs and cats
+                they have a farm and too many dogs and cats.
             </p>
 
             <details>
@@ -102,10 +102,54 @@
 
             <summary>Now</summary>
 
+            <!-- my age in real time -->
+            <script>
+                // my birthday
+                var countUpDate = new Date("Aug 30, 2001 04:37:25").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function () {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = now - countUpDate;
+
+                    // Time calculations for years, days, hours, minutes and seconds
+                    var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365))
+                    var days = Math.floor((distance % (1000 * 60 * 60 * 24 *365)) / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="output"
+                    document.getElementById("output").innerHTML = years + "y" + days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
+
+            <p style="float: left;">
+                Currently
+            </p>
+
+            <p id="output" style="float: left; padding-left: 1% ; padding-right: 1%;"> </p>
+
             <p>
-                Currently old, majoring in Computer Science and minoring in philosophy. Working hard everyday to keep me
-                busy and motivated. Enjoying travelling and
-                expereincing new things everyday, and enrich myself with all my expereince.
+                old.
+            </p>
+            
+            <p style="margin-top:0%;">
+                majoring in computer science and minoring in philosophy.
+                Working hard everyday to keep me busy and
+                motivated. Enjoying travelling and experiencing new things everyday, and enrich myself with all my
+                experience.
             </p>
 
             <details>
@@ -126,9 +170,9 @@
             <section id="myprojects">
                 <details class="project">
                     <summary class="project">The Buzz Application</summary>
-                    <p>Took part in Backend, Admin, and Project Manager</p>
+                    <p>Took part in Backend, Admin, and Project Managing</p>
                     <p>
-                        Created a company socialling app that allows authorized users to post ideas, comments, and
+                        Created a company social media that allows authorized users to post ideas, comments, and
                         files.
                     </p>
                     <p>
@@ -147,7 +191,7 @@
                     <img src="images/admin2.png" alt="admin code 2" width="450" height="300" loading="lazy">
 
                     <p>
-                        For Project Managing, I managed the Team Trello board, assigned individual taskes, schduled team
+                        For Project Managing, I managed the Team Trello board, assigned individual tasks, schduled team
                         meeting,
                         review code, fixing bugs, and improving functionality and user experience.
                     </p>
@@ -166,13 +210,14 @@
                 <details class="project">
                     <summary class="project">Automatic Market Maker</summary>
                     <p>
-                        Using Solidity to create smart contact that trade Eth with any ERC tokens when the caller runs
+                        Using Solidity to create smart contact that trade Etheruem with any ERC tokens when the caller
+                        runs
                         the program.
                     </p>
                     <p>
                         I created the methods for swapForEth, estimateSwapForEth, swapForERC20Token,
                         estimateSwapForERC20Token,
-                        and worked on provideLiqudity
+                        and worked on provideLiqudity.
                     </p>
                     <img src="images/remix1.png" alt="Eth remix code 1" width="450" height="300" loading="lazy">
                     <img src="images/remix2.png" alt="Eth remix code 2" width="450" height="300" loading="lazy">
@@ -182,7 +227,7 @@
 
                 <details class="project">
                     <summary class="project">Mech Robotic Language tester</summary>
-                    <p>Professor Corey Montella is creating a programming language specifically targetted at robortic
+                    <p>Professor Corey Montella is creating a programming language specifically targetted at robotic.
                     </p>
                     <p>As a tester, I tested Mech language using mathmatical operation to find bugs and unexpected
                         behaviors, fix the bugs and push onto gitlab to let Professor Montella review them.</p>
@@ -193,7 +238,7 @@
                 <details class="project">
                     <summary class="project">Local Etheruem Blockchain</summary>
                     <p>Build a Etheruem-like blockchain based on Merkle Tree data structure.</p>
-                    <p>In this project, my job was to create the Merkele Tree data structure,
+                    <p>In this project, my job was to create the Merkle Tree data structure,
                         generate random input for testing, create block strcutre, validation, and testing block and
                         validation.
                     </p>
@@ -363,14 +408,15 @@
                         target="_blank">Miles</a> (@<a
                         href="https://www.instagram.com/milesmfilms/?utm_source=ig_embed&amp;utm_campaign=loading"
                         style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
-                        target="_blank">milesmfilms</a>) • Instagram photos and videos</p>
+                        target="_blank">milesmfilms</a>) • Instagram photos and videos
+                </p>
             </div>
         </blockquote>
         <script async src="//www.instagram.com/embed.js"></script>
         <!-- End of Instagram Embed Code -->
 
         <p>
-            Free Domain obtained from W3School.com
+            Free Domain obtained from github
         </p>
     </footer>
 </body>
