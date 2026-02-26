@@ -7,169 +7,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jiecheng Yao</title>
     <link rel="icon" href="images/me.jpg" type="image/icon">
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Jiecheng Yao — Computer Science Alumni at Lehigh University. Experience, projects, and contact.">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
-        <!-- header introduction -->
-        <br>
-        <br>
-        <br>
-        <h1 style="text-align: center; font-size: 400%; color: antiquewhite;">I am Jie</h1>
-        <h4 style="text-align: center; color: antiquewhite;">Computer Science Alumni at Lehigh University</h4>
-        <hr style="width:40%;">
-        <img src="images/ticket.jpeg" alt="ticket machine in parking garage" class="ticketPicture">
-        <article id="skills">
-            <h5 style="text-align: center;">The languages I speak :)</h5>
-            <p style="font-size: medium;text-align: center;">
-                Java, HTML, Python, SQL, C, C++, Typescript/Javascript
-            </p>
-            <hr style="width: 20%;">
-        </article>
+    <nav class="nav" aria-label="Primary" data-open="false">
+        <div class="container nav__inner">
+            <a class="nav__brand" href="#top">
+                <span class="nav__dot" aria-hidden="true"></span>
+                <span>Jie</span>
+            </a>
 
-        <!-- navigation bar -->
-        <nav class="navbar" style="display: flex; justify-content: center">
-            <a href="#"><i class="home"></i>HOME</a>
-            <a href="#story"><i class="story"></i>MY STORY</a>
-            <a href="#projects"><i class="projects"></i>EXPERIENCE & PROJECTS</a>
-            <a href="#interests"><i class="interests"></i>MY LIFE</a>
-            <a href="#contact"><i class="contact"></i>CONTACT ME</a>
-        </nav>
+            <button class="nav__toggle" type="button" aria-controls="nav-links" aria-expanded="false">
+                Menu
+            </button>
+
+            <div class="nav__links" id="nav-links">
+                <a href="#top">Home</a>
+                <a href="#story">My story</a>
+                <a href="#projects">Experience & projects</a>
+                <a href="#interests">My life</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="top">
+        <div class="container hero__inner">
+            <div class="hero__card">
+                <h1 class="hero__title">I am Jie</h1>
+                <p class="hero__subtitle">Computer Science Alumni at Lehigh University</p>
+
+                <div class="pill-row" aria-label="Languages">
+                    <span class="pill">Java</span>
+                    <span class="pill">HTML</span>
+                    <span class="pill">Python</span>
+                    <span class="pill">SQL</span>
+                    <span class="pill">C</span>
+                    <span class="pill">C++</span>
+                    <span class="pill">TypeScript / JavaScript</span>
+                </div>
+
+                <div class="cta-row">
+                    <a class="btn btn--primary" href="#projects">View projects</a>
+                    <a class="btn" href="#contact">Contact me</a>
+                </div>
+            </div>
+
+            <div class="hero__media">
+                <img src="images/ticket.jpeg" alt="Ticket machine in a parking garage" loading="lazy">
+            </div>
+        </div>
     </header>
 
     <!-- main section -->
-    <main class="main">
+    <main>
 
-        <!-- achievement quote -->
-        <!-- add a background picture -->
-        <article id="quote" style="background-image: url('images/skynight.jpg'); background-size: 100%; ">
-            <h3>MY GREATEST ACHIEVEMENT</h3>
-            <hr style="width: 38%; margin-left: 0%;">
-            <p class="quote">
-                The greatest achievement in my life is knowing how to be myself. I enjoy my happiness and success,
-                but I also accept my mistakes. I accept my fear and anxieties as part of me, seeing all my goods and
-                bads.
-            </p>
-        </article>
+        <section id="quote" class="section section--quote">
+            <div class="container">
+                <div class="quote-card">
+                    <p class="section__kicker">Highlight</p>
+                    <h2 class="section__title">My greatest achievement</h2>
+                    <p class="quote">
+                        The greatest achievement in my life is knowing how to be myself. I enjoy my happiness and success,
+                        but I also accept my mistakes. I accept my fear and anxieties as part of me, seeing all my goods and
+                        bads.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <!-- My Story Section -->
-        <article id="story">
-            <br>
-            <br>
-            <br>
-            <h3>MY STORY</h3>
-            <hr style="width:13%; margin-left: 0%;">
+        <section id="story" class="section">
+            <div class="container">
+                <p class="section__kicker">About</p>
+                <h2 class="section__title">My story</h2>
 
-            <img src="images/pole.jpeg" alt="me between two poles" class="pole_picture">
-            <summary>Early Life</summary>
-            <!-- add picture of yangji -->
-            <p>
-                I was born and raised in
-                <a href="https://en.wikipedia.org/wiki/Guangzhou" style="color:wheat"><i class="story"></i>Guangzhou,
-                    China</a>, a city with more than 15
-                million people. My family were farmers before the Chinese modernization
-                in the early 2000s rasing lifestocks.
-            </p>
-            <details>
-                <summary class="story">Pictures of Early life</summary>
-                <img src="images/yangji.image" alt="yangji" style="height: 20%; width: 40%; padding-top: 5%;">
-                <img src="images/middleschool.jpg" alt="middleschool" style="height: 20%; width: 40%; padding-top: 5%;">
-            </details>
+                <div class="split">
+                    <div>
+                        <div class="card">
+                            <h3 class="subhead">Early life</h3>
+                            <p>
+                                I was born and raised in
+                                <a href="https://en.wikipedia.org/wiki/Guangzhou">Guangzhou, China</a>, a city with more than 15
+                                million people. My family were farmers before the Chinese modernization in the early 2000s raising
+                                livestock.
+                            </p>
 
-            <br>
+                            <details>
+                                <summary>Pictures of early life</summary>
+                                <div class="details__body">
+                                    <div class="media-grid">
+                                        <img class="media" src="images/yangji.image" alt="Yangji" loading="lazy">
+                                        <img class="media" src="images/middleschool.jpg" alt="Middle school" loading="lazy">
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
 
-            <summary>High School Days</summary>
-            <!-- add picture of Indy and graduation -->
-            <p>
-                After one year of highschool in China, I applied and got into a U.S. high school,
-                <a href="https://www.theindependentschool.com/" style="color:wheat"><i class="story"></i>The
-                    Independent School</a>, in Wichita, Kansas. Independent is a small private school and my
-                graduating class had less than 40 students. I stayed with a large family of 6 in Augusta, Kansas,
-                where
-                they have a farm and too many dogs and cats.
-            </p>
+                        <div class="card">
+                            <h3 class="subhead">High school days</h3>
+                            <p>
+                                After one year of high school in China, I applied and got into a U.S. high school,
+                                <a href="https://www.theindependentschool.com/">The Independent School</a>, in Wichita, Kansas.
+                                Independent is a small private school and my graduating class had less than 40 students. I stayed
+                                with a large family of 6 in Augusta, Kansas, where they have a farm and too many dogs and cats.
+                            </p>
 
-            <details>
-                <summary class="story">Pictures of High School</summary>
-                <img src="images/highschool.jpg" alt="highschool graduation"
-                    style="height: 20%; width: 40%; padding-top: 5%;">
-            </details>
+                            <details>
+                                <summary>Pictures of high school</summary>
+                                <div class="details__body">
+                                    <div class="media-grid">
+                                        <img class="media wide" src="images/highschool.jpg" alt="High school graduation" loading="lazy">
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
 
-            <br>
+                        <div class="card">
+                            <h3 class="subhead">Now</h3>
+                            <p class="muted">
+                                Currently <span id="output" aria-live="polite">—</span> old.
+                            </p>
+                            <p>
+                                Majoring in computer science and minoring in philosophy. Working hard every day to keep me busy and
+                                motivated. Enjoying travelling and experiencing new things every day, and enriching myself with all my
+                                experiences.
+                            </p>
 
-            <summary>Now</summary>
+                            <details>
+                                <summary>Pictures of now</summary>
+                                <div class="details__body">
+                                    <div class="media-grid">
+                                        <img class="media wide" src="images/smoke.jpeg" alt="Smoke in the alley" loading="lazy">
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
 
-            <!-- my age in real time -->
-            <script>
-                // my birthday
-                var countUpDate = new Date("Aug 30, 2001 04:37:25").getTime();
+                    <aside>
+                        <img class="media" src="images/pole.jpeg" alt="Me between two poles" loading="lazy">
+                    </aside>
+                </div>
+            </div>
+        </section>
 
-                // Update the count down every 1 second
-                var x = setInterval(function () {
+        <section id="projects" class="section">
+            <div class="container">
+                <p class="section__kicker">Work</p>
+                <h2 class="section__title">Current work</h2>
 
-                    // Get today's date and time
-                    var now = new Date().getTime();
+                <div class="card">
+                    <h3 class="subhead">UnieLogics</h3>
+                    <p class="muted">Current role.</p>
+                    <p>
+                        I am currently working as a Software Engineer at UnieLogics' core team, a company that provides software solutions for the e-commerce logistics and supply chain industry.
+                    </p>
 
-                    // Find the distance between now and the count down date
-                    var distance = now - countUpDate;
+                    <div class="cta-row">
+                        <h4 class="subhead">Products I worked on</h4>
+                        <a class="btn btn--primary" href="https://www.unielogics.com/" target="_blank" rel="noreferrer noopener">
+                            UnieLogics (Home)
+                        </a>
+                        <a class="btn" href="https://prepcenternearme.com/" target="_blank" rel="noreferrer noopener">
+                            PrepCenterNearMe (Seller + Warehouse network)
+                        </a>
+                        <a class="btn" href="https://uniewms.com/" target="_blank" rel="noreferrer noopener">
+                            UnieWMS (Warehouse management software)
+                        </a>
+                    </div>
+                </div>
 
-                    // Time calculations for years, days, hours, minutes and seconds
-                    var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365))
-                    var days = Math.floor((distance % (1000 * 60 * 60 * 24 *365)) / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                <h3 class="subhead">Experience & projects</h3>
 
-                    // Output the result in an element with id="output"
-                    document.getElementById("output").innerHTML = years + "y" + days + "d " + hours + "h "
-                        + minutes + "m " + seconds + "s ";
-
-                    // If the count down is over, write some text 
-                    if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById("demo").innerHTML = "EXPIRED";
-                    }
-                }, 1000);
-            </script>
-
-            <p style="float: left;">
-                Currently
-            </p>
-
-            <p id="output" style="float: left; padding-left: 1% ; padding-right: 1%; color: rgb(84, 204, 204)"> </p>
-
-            <p>
-                old.
-            </p>
-            
-            <p style="margin-top:0%;">
-                majoring in computer science and minoring in philosophy.
-                Working hard everyday to keep me busy and
-                motivated. Enjoying travelling and experiencing new things everyday, and enrich myself with all my
-                experience.
-            </p>
-
-            <details>
-                <summary class="story">Pictures of Now</summary>
-                <img src="images/smoke.jpeg" alt="smoke in the ally" style="height: 20%; width: 40%; padding-top: 5%;">
-            </details>
-        </article>
-
-        <!--Projects Section -->
-        <!-- add screenshot AND video here -->
-        <article id="projects">
-            <br>
-            <br>
-            <br>
-            <h3>MY EXPERENCE & PROJECTS</h3>
-            <hr style="width:18%; margin-left: 0%;">
-
-            <section id="myprojects">
-                 <details class="project">
-                    <summary class="project">Stellar Service Intern</summary>
+                <div id="myprojects">
+                    <details>
+                        <summary>Stellar Service Intern</summary>
+                        <div class="details__body">
                     <p>
                         During my internship at Stellar Services, I had the opportunity to be a part of a dynamic 
                         software engineering team that focused on developing mobile applications using React Native. Here's a snapshot of my contributions and learnings:
@@ -202,27 +219,32 @@
                         Throughout this journey, I improved my problem-solving skills, learned to manage time effectively, and understood the significance of feedback and iterative improvement. 
                         Grateful for this hands-on experience, I am now more equipped and excited to venture further into the software world.
                     </p> 
-                    
-                    <img src="images/Stellar1.jpg" alt="backend code 1" width="300" height="450" loading="lazy" style="padding: 20px;">
-                    <img src="images/Stellar2.jpg" alt="backend code 2" width="300" height="450" loading="lazy" style="padding: 20px;">
-                </details>
 
-                <br>
-                
-                <details class="project">
-                    <summary class="project">Recipe Recommendation App</summary>
+                            <div class="media-grid">
+                                <img class="media" src="images/Stellar1.jpg" alt="Stellar Services — screenshot 1" loading="lazy">
+                                <img class="media" src="images/Stellar2.jpg" alt="Stellar Services — screenshot 2" loading="lazy">
+                            </div>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>Recipe Recommendation App</summary>
+                        <div class="details__body">
                     <p>This app enables users to input ingredients and receive recipe suggestions using the Edaman API.</p>
                     <p>Users can upload an image of their food ingredients, and the app will identify them using Google Cloud Vision's image recognition.</p>
-                    <img src="images/app1.png" alt="backend code 1" width="350" height="450" loading="lazy" style="padding: 20px;">
-                    <img src="images/app2.png" alt="backend code 2" width="350" height="450" loading="lazy" style="padding: 20px;">
-                    <img src="images/app3.png" alt="backend code 1" width="350" height="450" loading="lazy" style="padding: 20px;">
-                    <img src="images/app4.png" alt="backend code 2" width="350" height="450" loading="lazy" style="padding: 20px;">
-                </details>
 
-                <br>
-                
-                <details class="project">
-                    <summary class="project">The Buzz Application</summary>
+                            <div class="media-grid">
+                                <img class="media" src="images/app1.png" alt="Recipe app — screenshot 1" loading="lazy">
+                                <img class="media" src="images/app2.png" alt="Recipe app — screenshot 2" loading="lazy">
+                                <img class="media" src="images/app3.png" alt="Recipe app — screenshot 3" loading="lazy">
+                                <img class="media" src="images/app4.png" alt="Recipe app — screenshot 4" loading="lazy">
+                            </div>
+                        </div>
+                    </details>
+                    
+                    <details>
+                        <summary>The Buzz Application</summary>
+                        <div class="details__body">
                     <p>Took part in Backend, Admin, and Project Managing</p>
                     <p>
                         Created a company social media that allows authorized users to post ideas, comments, and
@@ -232,36 +254,46 @@
                         For backend, I worked on creating POST, PUT, DELETE, UPDATE routes, Google OAuth, User Hashmap
                         and the backend database that saves input data from the frontend.
                     </p>
-                    <img src="images/backend1.png" alt="backend code 1" width="450" height="300" loading="lazy">
-                    <img src="images/backend2.png" alt="backend code 2" width="450" height="300" loading="lazy">
+
+                            <div class="media-grid">
+                                <img class="media" src="images/backend1.png" alt="Backend code — screenshot 1" loading="lazy">
+                                <img class="media" src="images/backend2.png" alt="Backend code — screenshot 2" loading="lazy">
+                            </div>
                     <p>
                         For Admin, I worked on SQL commands, saving files from our database onto Google Drive, user and
                         posts validation,
                         and linking between ideas, files, and comments, deploying database using Docker, and use PGAdmin
                         to test/manage live database.
                     </p>
-                    <img src="images/admin1.png" alt="admin code 1" width="450" height="300" loading="lazy">
-                    <img src="images/admin2.png" alt="admin code 2" width="450" height="300" loading="lazy">
+
+                            <div class="media-grid">
+                                <img class="media" src="images/admin1.png" alt="Admin code — screenshot 1" loading="lazy">
+                                <img class="media" src="images/admin2.png" alt="Admin code — screenshot 2" loading="lazy">
+                            </div>
 
                     <p>
                         For Project Managing, I managed the Team Trello board, assigned individual tasks, schduled team
                         meeting,
                         review code, fixing bugs, and improving functionality and user experience.
                     </p>
-                </details>
+                        </div>
+                    </details>
 
-                <br>
+                    <details>
+                        <summary>Social Network Messaging Application</summary>
+                        <div class="details__body">
+                            <div class="media">
+                                <iframe width="100%" height="420" src="https://www.youtube.com/embed/DT4DV2QPDEM"
+                                    title="Social Network Messaging Application demo" loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </details>
 
-                <details class="project">
-                    <summary class="project">Social Network Messaging Application</summary>
-                    <embed style="width:720px; height:450px; padding-top: 1em;"
-                        src="https://www.youtube.com/embed/DT4DV2QPDEM"></embed>
-                </details>
-
-                <br>
-
-                <details class="project">
-                    <summary class="project">Automatic Market Maker</summary>
+                    <details>
+                        <summary>Automatic Market Maker</summary>
+                        <div class="details__body">
                     <p>
                         Using Solidity to create smart contact that trade Etheruem with any ERC tokens when the caller
                         runs
@@ -272,105 +304,100 @@
                         estimateSwapForERC20Token,
                         and worked on provideLiqudity.
                     </p>
-                    <img src="images/remix1.png" alt="Eth remix code 1" width="450" height="300" loading="lazy">
-                    <img src="images/remix2.png" alt="Eth remix code 2" width="450" height="300" loading="lazy">
-                </details>
+                            <div class="media-grid">
+                                <img class="media" src="images/remix1.png" alt="Remix — screenshot 1" loading="lazy">
+                                <img class="media" src="images/remix2.png" alt="Remix — screenshot 2" loading="lazy">
+                            </div>
+                        </div>
+                    </details>
 
-                <br>
-
-                <details class="project">
-                    <summary class="project">Mech Robotic Language tester</summary>
+                    <details>
+                        <summary>Mech Robotic Language tester</summary>
+                        <div class="details__body">
                     <p>Professor Corey Montella is creating a programming language specifically targetted at robotic.
                     </p>
                     <p>As a tester, I tested Mech language using mathmatical operation to find bugs and unexpected
                         behaviors, fix the bugs and push onto gitlab to let Professor Montella review them.</p>
-                </details>
+                        </div>
+                    </details>
 
-                <br>
-
-                <details class="project">
-                    <summary class="project">Local Etheruem Blockchain</summary>
+                    <details>
+                        <summary>Local Etheruem Blockchain</summary>
+                        <div class="details__body">
                     <p>Build a Etheruem-like blockchain based on Merkle Tree data structure.</p>
                     <p>In this project, my job was to create the Merkle Tree data structure,
                         generate random input for testing, create block strcutre, validation, and testing block and
                         validation.
                     </p>
-                    <img src="images/inputgenerate.png" alt="Eth input generate" width="450" height="300"
-                        loading="lazy">
-                    <img src="images/merkletree.png" alt="Eth Merkle Tree" width="450" height="300" loading="lazy">
-                </details>
-            </section>
-        </article>
+                            <div class="media-grid">
+                                <img class="media" src="images/inputgenerate.png" alt="Input generation — screenshot" loading="lazy">
+                                <img class="media" src="images/merkletree.png" alt="Merkle tree — screenshot" loading="lazy">
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
 
-        <!-- Interests Section -->
-        <!-- add pictures of sporting wichita soccer champions, road trip taco, travel, dogs and cats -->
-        <article id="interests">
-            <br>
-            <br>
-            <br>
-            <h3>MY LIFE</h3>
-            <hr style="width:10%; margin-left: 0%;">
-            <img src="images/linus.jpg" alt="kitty linus" width="200" height="250" loading="lazy">
-            <img src="images/jordan.jpg" alt="pic with jordan" width="350" height="250" loading="lazy">
-            <img src="images/ding.jpg" alt="pic with ding" width="200" height="250" loading="lazy">
-            <img src="images/swim.jpg" alt="indy swim team" width="500" height="350" loading="lazy">
-            <img src="images/taco.jpg" alt="mudding in my taco" width="250" height="300" loading="lazy">
-            <!-- add pictures here -->
-        </article>
+        <section id="interests" class="section">
+            <div class="container">
+                <p class="section__kicker">Life</p>
+                <h2 class="section__title">My life</h2>
 
-        <!-- Contact Section -->
-        <article id="contact"
-            style="background-image: url(images/contact.jpg); background-size: cover; background-position: center; background-repeat: no-repeat">
-            <br>
-            <br>
-            <br>
-            <h3>CONTACT ME</h3>
-            <hr style="width:17%; margin-left: 0%;">
+                <div class="gallery" aria-label="Photo gallery">
+                    <img src="images/linus.jpg" alt="Kitty Linus" loading="lazy">
+                    <img src="images/jordan.jpg" alt="Picture with Jordan" loading="lazy">
+                    <img src="images/ding.jpg" alt="Picture with Ding" loading="lazy">
+                    <img src="images/swim.jpg" alt="Indy swim team" loading="lazy">
+                    <img src="images/taco.jpg" alt="Mudding in my Taco" loading="lazy">
+                </div>
+            </div>
+        </section>
 
-            <figure>
-                <img src="images/me_drawing.jpg" alt="drawing of Jie" width="250" height="300" loading="lazy"
-                    class="drawing">
-                <pre style="color: brown;">
+        <section id="contact" class="section section--contact">
+            <div class="container">
+                <p class="section__kicker">Contact</p>
+                <h2 class="section__title">Contact me</h2>
 
+                <div class="contact-grid">
+                    <div class="card">
+                        <img class="media" src="images/me_drawing.jpg" alt="Drawing of Jie" loading="lazy">
 
+                        <ul class="contact-list">
+                            <li>
+                                <strong>Phone</strong>:
+                                <a href="tel:+17854911150">785-491-1150</a>
+                            </li>
+                            <li>
+                                <strong>LinkedIn</strong>:
+                                <a href="https://www.linkedin.com/in/jiecheng-yao-71b3161b8/">Jiecheng Yao</a>
+                            </li>
+                            <li>
+                                <strong>Email</strong>:
+                                <a href="mailto:jigglyjie@gmail.com">jigglyjie@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
 
-
-                    Phone Number: <a href=“tel:785-491-1150”>785-491-1150</a>
-                    
-                    LinkedLn: <a href="https://www.linkedin.com/in/jiecheng-yao-71b3161b8/" class="linkin">Jiecheng Yao</a>
-
-                    My Email: <a href="mailto:jigglyjie@gmail.com">jigglyjie@gmail.com</a>
-
-                </pre>
-            </figure>
-            <br>
-            <h3>SEND ME A MESSAGE:)</h3>
-            <!-- <a href="mailto:jiy921@lehigh.edu">Email Me</a> -->
-            <form action="https://formsubmit.co/jigglyjie@gmail.com" method="POST" class="email_me">
-                <input type="text" size="19" name="contact-name" placeholder="Enter Your Name"><br><br>
-                <input type="text" name="contact-email" placeholder="Enter Your Email" required><br><br>
-                <textarea name="contact-message" rows="10" cols="40" placeholder="Enter Your Message"
-                    required></textarea>
-                <br><br>
-                <button type="submit" class="contact-send">Send</button>
-            </form>
-        </article>
+                    <div class="card">
+                        <h3 class="subhead">Send me a message</h3>
+                        <form action="https://formsubmit.co/jigglyjie@gmail.com" method="POST" class="email_me">
+                            <input type="text" name="contact-name" placeholder="Your name" autocomplete="name">
+                            <input type="email" name="contact-email" placeholder="Your email" autocomplete="email" required>
+                            <textarea name="contact-message" placeholder="Your message" required></textarea>
+                            <button type="submit" class="contact-send">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer section -->
     <footer class="footer">
-        <br>
-        <hr>
-        <br>
-        <br>
-        <br>
-        <h3
-            style="font-size: 200%; color: beige; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-            Profile Pictures Taken by @milesmfilms</h3>
-        <br>
-        <br>
-        <br>
-        <!-- Instagram Embed Code -->
+        <div class="container">
+            <h2 class="footer__title">Profile pictures taken by @milesmfilms</h2>
+            <!-- Instagram Embed Code -->
         <blockquote class="instagram-media"
     data-instgrm-permalink="https://www.instagram.com/miles_martin_/?utm_source=ig_embed&amp;utm_campaign=loading"
     data-instgrm-version="14"
@@ -464,12 +491,58 @@
     </div>
 </blockquote>
 <script async src="//www.instagram.com/embed.js"></script>
-        <!-- End of Instagram Embed Code -->
+            <!-- End of Instagram Embed Code -->
 
-        <p>
-            Free Domain obtained from github
-        </p>
+            <p class="muted">Free domain obtained from GitHub Pages.</p>
+        </div>
     </footer>
+
+    <script>
+        (function () {
+            // Mobile nav toggle
+            var nav = document.querySelector(".nav");
+            var btn = document.querySelector(".nav__toggle");
+            var links = document.querySelector(".nav__links");
+            if (nav && btn && links) {
+                var closeNav = function () {
+                    nav.setAttribute("data-open", "false");
+                    btn.setAttribute("aria-expanded", "false");
+                };
+
+                btn.addEventListener("click", function () {
+                    var isOpen = nav.getAttribute("data-open") === "true";
+                    nav.setAttribute("data-open", String(!isOpen));
+                    btn.setAttribute("aria-expanded", String(!isOpen));
+                });
+
+                links.addEventListener("click", function (e) {
+                    if (e.target && e.target.tagName === "A") closeNav();
+                });
+
+                window.addEventListener("keydown", function (e) {
+                    if (e.key === "Escape") closeNav();
+                });
+            }
+
+            // Live age counter (runs after DOM exists)
+            var output = document.getElementById("output");
+            if (!output) return;
+
+            var birth = new Date("Aug 30, 2001 04:37:25").getTime();
+            window.setInterval(function () {
+                var now = Date.now();
+                var distance = now - birth;
+
+                var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
+                var days = Math.floor((distance % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                output.textContent = years + "y " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+            }, 1000);
+        })();
+    </script>
 </body>
 
 </html>
